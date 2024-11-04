@@ -17,6 +17,10 @@ docker4 page link
 
 ## Hippocampus Docker 실행
 
+### [[**참고 링크**]](https://github.com/bthyreau/hippodeep)
+
+<br>
+
 #### Docker 접속 명령어
 ```
 docker run -it --network host --gpus all --shm-size=24G -v [Segmentation 대상 파일 경로]:/mnt bdsp/hippo_ecrf /bin/bash
@@ -45,7 +49,12 @@ sh deepseg1.sh ../mnt/          ⋯      코드 실행 명령어
 
 ## hdbet Docker 실행
 
+### [[**참고 링크**]](https://github.com/MIC-DKFZ/HD-BET)
+
+<br>
+
 #### Docker 접속 명령어
+
 ```
 docker run -it --network host --gpus all --shm-size=24G -v [Extraction 대상 파일 경로]:/mnt bdsp/hdbet_ecrf /bin/bash
 ```
@@ -57,9 +66,9 @@ docker run -it --network host --gpus all --shm-size=24G -v /nasdata/T1_images/:/
 
 ### 접속 후 Brain Extraction Tool 실행 명령어
 ```
-cd HD_BET                               ⋯      Extraction 실행 코드 경로 접속 명령어
-hd-bet -i /mnt/                         ⋯      Extraction 실행 명령어 (입력 데이터 위치에 결과 데이터 출력)
-hd-bet -i /mnt/ /mnt/[output_path]      ⋯      Extraction 실행 명령어 (지정한 위치에 결과 데이터 출력)
+cd HD_BET                                  ⋯      Extraction 실행 코드 경로 접속 명령어
+hd-bet -i /mnt/                            ⋯      Extraction 실행 명령어 (입력 데이터 위치에 결과 데이터 출력)
+hd-bet -i /mnt/ -o /mnt/[output_path]      ⋯      Extraction 실행 명령어 (지정한 위치에 결과 데이터 출력)
 ```
 
 ### 실행 결과

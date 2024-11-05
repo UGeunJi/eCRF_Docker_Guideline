@@ -2,7 +2,7 @@
 
 
   
-- [Hippocampus Segmentation Docker](#HippocampusSegmentationDocker실행)
+- [Hippocampus Segmentation Docker](#HippocampusSegmentationDocker)
 - [hdbet Extraction Docker](##hdbetExtractionDocker실행)
 - [haca3 Harmonization Docker](##haca3HarmonizationDocker실행)
 - [WMH Segmentation Docker](##WMHSegmentationDocker실행)
@@ -17,7 +17,7 @@
 
 <br>
 
-## Hippocampus Segmentation Docker 실행
+## Hippocampus Segmentation Docker
 
 ### [[**참고 링크**]](https://github.com/bthyreau/hippodeep)
 

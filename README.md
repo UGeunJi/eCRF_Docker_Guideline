@@ -3,9 +3,9 @@
 
   
 - [Hippocampus Segmentation Docker](#hippocampus-segmentation-docker)
-- [hdbet Extraction Docker](##hdbetExtractionDocker실행)
-- [haca3 Harmonization Docker](##haca3HarmonizationDocker실행)
-- [WMH Segmentation Docker](##WMHSegmentationDocker실행)
+- [hdbet Extraction Docker](#hdbet-extraction-docker)
+- [haca3 Harmonization Docker](#haca3-harmonization-docker)
+- [WMH Segmentation Docker](#wmh-segmentation-docker)
 
 <p align="center">
   <img width="900" alt="image" src="https://github.com/user-attachments/assets/15e17fbd-87b5-4753-9026-c494f5ee937c">
@@ -60,7 +60,7 @@ sh deepseg1.sh ../mnt/          ⋯      코드 실행 명령어
 
 <br>
 
-## hdbet Extraction Docker 실행
+## hdbet Extraction Docker
 
 ### [[**참고 링크**]](https://github.com/MIC-DKFZ/HD-BET)
 
@@ -109,7 +109,7 @@ hd-bet -i /mnt/ -o /mnt/[output_path]      ⋯      Extraction 실행 명령어 
 
 <br>
 
-## haca3 Harmonization Docker 실행
+## haca3 Harmonization Docker
 
 ### 필수 전처리 과정
 
@@ -149,7 +149,7 @@ haca3-test --in-path /workspace/D11004_COR_3D_T1_FSPGR_20151015083508_9_N4_resam
 
 <br>
 
-## WMH Segmentation Docker 실행
+## WMH Segmentation Docker
 
 ### 필수 전처리 과정
 

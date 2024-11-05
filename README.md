@@ -28,19 +28,15 @@
 ### Recommended Preprocessing Step
 
 ```
-1. N4 Bias Correlation       ⋯      This will improve the model's performance
+# Optional      ⋯     This will improve the model's performance
+1. N4 Bias Correlation      
+2. Registration
 ```
 
 #### Docker Access Command :whale2:
 
 ```
-docker run -it --network host --gpus all --shm-size=24G -v [Segmentation Subject Files Path]:/mnt hippo_seg /bin/bash
-```
-
-#### Example
-
-```
-docker run -it --network host --gpus all --shm-size=24G -v /nasdata/T1_images/:/mnt hippo_seg /bin/bash
+docker run -it --network host --gpus all -v [Segmentation Subject Files Path]:/mnt hippo_seg /bin/bash
 ```
 
 ### Hippocampus Segmentation Execution Commands after Access
@@ -75,19 +71,15 @@ It is saved in thed path of the executable target file.
 ### Recommanded Preprocessing Steps
 
 ```
-1. N4 Bias Correlation       ⋯      This will improve the model's performance
+# Optional      ⋯     This will improve the model's performance
+1. N4 Bias Correlation      
+2. Registration
 ```
 
 #### Docker Execution Command :whale2:
 
 ```
-docker run -it --network host --gpus all --shm-size=24G -v [Extraction 대상 파일 경로]:/mnt vnmd/hdbet_bdsp /bin/bash
-```
-
-#### Example
-
-```
-docker run -it --network host --gpus all --shm-size=24G -v /nasdata/T1_images/:/mnt vnmd/hdbet_bdsp /bin/bash
+docker run -it --network host --gpus all -v [Extraction Subject Files Path]:/mnt vnmd/hdbet_bdsp /bin/bash
 ```
 
 ### Brain Extraction Tool Execution Commands after Access
@@ -129,12 +121,6 @@ When executing the 'hd-bet -i /mnt/ -o /mnt/[output_path]', it is saved in '/mnt
 docker run --rm --gpus all -it -v [Harmonization Subject Files Path]:/workspace haca3cna_v2
 ```
 
-#### Example
-
-```
-docker run --rm --gpus all -it -v /nasdata/T1_images/:/workspace haca3cna_v2
-```
-
 ### Harmonization Execution Commands after Access
 
 ```
@@ -172,25 +158,19 @@ Ex) flirt -dof 6 -in /nasdata3/cohort_FLAIR_2022-1/T1_N4/GH/L1_GH_04935_native_N
 #### Docker Execution Command :whale2:
 
 ```
-docker run -it --network host --gpus all --shm-size=24G -v [Segmentation 대상 파일 경로]:/mnt pgs_wmh_gpu_v1 /bin/bash
-```
-
-#### Example
-
-```
-docker run -it --network host --gpus all --shm-size=24G -v /nasdata/T1_and_FLAIR_images/:/mnt pgs_wmh_gpu_v1 /bin/bash
+docker run -it --network host --gpus all -v [Segmentation Subject Files Path]:/mnt pgs_wmh_gpu_v1 /bin/bash
 ```
 
 ### WMH Segmentation Execution Command after Access
 
 ```
 # WMH segmentation Execution Command Format
-python WMHs_segmentation_PGS_gpu_division.py [subject_brain.nii] [subject_brain_mask.nii] [subject_FLAIR.nii] [subject_WMH.nii] [GPU_number]                         ⋯      
+python WMHs_segmentation_PGS_gpu_division.py /mnt/[subject_brain.nii] /mnt/[subject_brain_mask.nii] /mnt/[subject_FLAIR.nii] /mnt/[subject_WMH.nii] [GPU_number]                         ⋯      
 
 # WMH segmentation Execution Command Format Example
-python WMHs_segmentation_PGS_gpu_division.py ${sub_fold}_brain.nii ${sub_fold}_brain_mask.nii ${sub_fold}_FLAIR.nii ${sub_fold}/${sub_fold}_WMH.nii 5
+python WMHs_segmentation_PGS_gpu_division.py /mnt/${sub_fold}_brain.nii /mnt/${sub_fold}_brain_mask.nii /mnt/${sub_fold}_FLAIR.nii /mnt/${sub_fold}/${sub_fold}_WMH.nii 5
 ```
 
 ### Result
 
-<img width="1375" alt="image" src="https://github.com/user-attachments/assets/6ce9bf5c-c7cc-4d2b-b3c2-810b4cdf7012">
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/d3dd8163-a3c4-44d0-8cf4-965ee677c4ea">

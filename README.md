@@ -2,7 +2,7 @@
 
 
   
-- [Hippocampus Segmentation Docker](#HippocampusSegmentationDocker)
+- [Hippocampus Segmentation Docker](#hippocampus-segmentation-docker)
 - [hdbet Extraction Docker](##hdbetExtractionDocker실행)
 - [haca3 Harmonization Docker](##haca3HarmonizationDocker실행)
 - [WMH Segmentation Docker](##WMHSegmentationDocker실행)

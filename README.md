@@ -40,7 +40,7 @@ docker run -it --network host --gpus all --shm-size=24G -v [Segmentation Subject
 #### Example
 
 ```
-docker run -it --network host --gpus all --shm-size=24G -v /nasdata/T1_images/:/mnt hippo_ecrf /bin/bash
+docker run -it --network host --gpus all --shm-size=24G -v /nasdata/T1_images/:/mnt hippo_seg /bin/bash
 ```
 
 ### Hippocampus Segmentation Execution Commands after Access

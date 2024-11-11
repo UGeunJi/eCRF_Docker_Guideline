@@ -1,4 +1,4 @@
-# :brain: BDSP Docker Guideline :kr:
+# :brain: eCRF Docker Guideline :kr:
 
 ## Section Jump Link
   
@@ -24,6 +24,17 @@
 ### [[Docker Hub Link]](https://hub.docker.com/r/ajtwlsdnrms/hippo_seg)
 
 ### [[**Reference Link**]](https://github.com/bthyreau/hippodeep)
+
+## Experiment Environment
+
+```
+GPU Model: NVIDIA A40
+NVIDIA Driver Version: 535.161.08
+Supply CUDA Version: 12.2
+CPU RAM: 65368064 KiB total
+
+Run-time on GPU: 13 s per subject
+```
 
 <br>
 
@@ -70,6 +81,17 @@ It is saved in thed path of the executable target file.
 
 ### [[**Reference Link**]](https://github.com/MIC-DKFZ/HD-BET)
 
+## Experiment Environment
+
+```
+GPU Model: NVIDIA A40
+NVIDIA Driver Version: 535.161.08
+Supply CUDA Version: 12.2
+CPU RAM: 65368064 KiB total
+
+Run-time on GPU: 43 s per subject
+```
+
 <br>
 
 ### Recommanded Preprocessing Steps
@@ -114,6 +136,17 @@ When executing the 'hd-bet -i /mnt/ -o /mnt/[output_path]', it is saved in '/mnt
 
 ### [[Docker Hub Link]](https://hub.docker.com/r/ajtwlsdnrms/haca3cna_v2)
 
+## Experiment Environment
+
+```
+GPU Model: NVIDIA A40
+NVIDIA Driver Version: 535.161.08
+Supply CUDA Version: 12.2
+CPU RAM: 63836.0 MiB total
+
+Run-time on GPU: 10 s per subject
+```
+
 ### Essential Preprocessing Steps
 
 ```
@@ -150,6 +183,17 @@ haca3-test --in-path /workspace/D11004_COR_3D_T1_FSPGR_20151015083508_9_N4_resam
 ## WMH Segmentation Docker
 
 ### [[Docker Hub Link]](https://hub.docker.com/r/ajtwlsdnrms/pgs_wmh_gpu_v1)
+
+## Experiment Environment
+
+```
+GPU Model: NVIDIA A40
+NVIDIA Driver Version: 535.161.08
+Supply CUDA Version: 12.3
+CPU RAM: 65368064 KiB total
+
+Run-time on GPU: 10 s per subject
+```
 
 ### Essential Preprocessing Steps
 

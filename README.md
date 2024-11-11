@@ -40,8 +40,9 @@ Run-time on GPU: 13 s per subject
 
 ### Recommended Preprocessing Step
 
+(Optional) This will improve the model's performance
+
 ```
-# Optional      ⋯     This will improve the model's performance
 1. N4 Bias Correlation      
 2. Registration
 ```
@@ -96,8 +97,9 @@ Run-time on GPU: 43 s per subject
 
 ### Recommanded Preprocessing Steps
 
+(Optional) This will improve the model's performance
+
 ```
-# Optional      ⋯     This will improve the model's performance
 1. N4 Bias Correlation      
 2. Registration
 ```
@@ -117,6 +119,7 @@ hd-bet -i /mnt/ -o /mnt/[output_path]      ⋯      Extraction Execution Command
 ```
 
 ### Extraction Result Save Path
+
 ```
 When executing the 'hd-bet -i /mnt/', it is saved in the execution target file path.
 When executing the 'hd-bet -i /mnt/ -o /mnt/[output_path]', it is saved in '/mnt/[output_path]'.

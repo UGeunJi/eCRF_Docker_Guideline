@@ -2,10 +2,10 @@
 
 ## Section Jump Link
   
-- [Hippocampus Segmentation Docker](#:brain:hippocampus-segmentation-docker)
-- [hdbet Extraction Docker](#:brain:hdbet-extraction-docker)
-- [haca3 Harmonization Docker](#:brain:haca3-harmonization-docker)
-- [WMH Segmentation Docker](#:brain:wmh-segmentation-docker)
+- [Hippocampus Segmentation Docker](#hippocampus-segmentation-docker)
+- [hdbet Extraction Docker](#hdbet-extraction-docker)
+- [haca3 Harmonization Docker](#haca3-harmonization-docker)
+- [WMH Segmentation Docker](#wmh-segmentation-docker)
 
 <br>
 
@@ -19,7 +19,7 @@
 
 <br>
 
-## :brain: Hippocampus Segmentation Docker
+## Hippocampus Segmentation Docker
 
 ### [[Docker Hub Link]](https://hub.docker.com/r/ajtwlsdnrms/hippo_seg)
 
@@ -119,7 +119,7 @@ It is saved in thed path of the executable target file.
 
 <br>
 
-## :brain: hdbet Extraction Docker
+## hdbet Extraction Docker
 
 ### [[Docker Hub Link]](https://hub.docker.com/r/ajtwlsdnrms/hdbet)
 
@@ -221,7 +221,7 @@ When executing the 'hd-bet -i /mnt/ -o /mnt/[output_path]', it is saved in '/mnt
 
 <br>
 
-## :brain: haca3 Harmonization Docker
+## haca3 Harmonization Docker
 
 ### [[Docker Hub Link]](https://hub.docker.com/r/ajtwlsdnrms/haca3cna_v2)
 
@@ -310,7 +310,7 @@ haca3-test --in-path /workspace/D11004_COR_3D_T1_FSPGR_20151015083508_9_N4_resam
 
 <br>
 
-## :brain: WMH Segmentation Docker
+## WMH Segmentation Docker
 
 ### [[Docker Hub Link]](https://hub.docker.com/r/ajtwlsdnrms/pgs_wmh_gpu_v1)
 
@@ -379,7 +379,7 @@ Ex) flirt -dof 6 -in /nasdata3/cohort_FLAIR_2022-1/T1_N4/GH/L1_GH_04935_native_N
 
 #### - Brain Extraction (ROBEX, HD-BET, ...)
 
-- [hdbet Extraction Docker](#:brain:hdbet-extraction-docker)
+- [hdbet Extraction Docker](#hdbet-extraction-docker)
 
 - In WMH (White Matter Hyperintensities) segmentation, Brain Extraction is an important preprocessing step that separates only brain tissue and removes non-brain tissues such as skull, sacrum, and air. In magnetic resonance imaging sequences such as FLAIR, non-brain tissues can appear as high-intensity signals, which can be easily confused with lesions. Removing these non-brain tissues through brain region extraction allows the model to focus on lesions, thereby improving segmentation accuracy.
 - In addition, brain region extraction increases computational efficiency by removing non-brain regions, enables standardization for comparison between data, and reduces noise to clearly distinguish the boundary between lesions and non-lesions. As a result, this process greatly improves the reliability and accuracy of WMH segmentation, making it essential for improving the quality of analysis and research results.

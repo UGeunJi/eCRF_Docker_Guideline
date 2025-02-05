@@ -377,7 +377,7 @@ Ex) flirt -dof 6 -in /nasdata3/cohort_FLAIR_2022-1/T1_N4/GH/L1_GH_04935_native_N
 
 <br>
 
-#### Brain Extraction (ROBEX, HD-BET, ...)
+#### - Brain Extraction (ROBEX, HD-BET, ...)
 
 - [hdbet Extraction Docker](#hdbet-extraction-docker)
 
